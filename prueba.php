@@ -1,6 +1,6 @@
 <?php
     try {
-        $dsn = "mysql:host=172.17.0.3:3306;dbname=php";//en host se usa la ip de contenedor sql y su puerto interno
+        $dsn = "mysql:host=database-php.cgiloqufj8us.us-east-1.rds.amazonaws.com;dbname=php";//en host se usa la ip de contenedor sql y su puerto interno
         $dbh = new PDO($dsn, "root", "root");
     } catch (PDOException $e){
         echo $e->getMessage();
